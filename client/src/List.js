@@ -102,7 +102,7 @@ export default function List() {
           Items(s):
           <input onChange={e => handleChange(e)} />
         </label>
-        <button className="center" type="submit">
+        <button className="buttonB" type="submit">
           {" "}
           Add{" "}
         </button>
