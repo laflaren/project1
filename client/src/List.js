@@ -20,13 +20,13 @@ export default function List() {
   //       });
   //   }, []);
   //
-  //   const handleChange = event => {
-  //     setInput(event.target.value);
-  //   };
+  const handleChange = event => {
+    setInput(event.target.value);
+  };
   //
-  //   const handleSubmit = event => {
-  //     event.preventDefault();
-  //   };
+  const handleSubmit = event => {
+    event.preventDefault();
+  };
   //
   //   const addTask = () => {
   //     fetch("/api/todos", {
@@ -102,7 +102,7 @@ export default function List() {
           Items(s):
           <input onChange={e => handleChange(e)} />
         </label>
-        <button className="buttonB" type="submit">
+        <button className="buttonAdd" type="submit">
           {" "}
           Add{" "}
         </button>
