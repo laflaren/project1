@@ -5,26 +5,21 @@ export default function Home() {
   // const [page, setPage] = useState('home');
   return (
     <div>
-      <div class="orange">
+      <div className="orange">
         <img
           className="center"
           src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.tumblr.com%2Fpjm0hgk%2FhpRlz17tv%2Ffeather.png&f=1&nofb=1"
         />
       </div>
-      <div class="home2">
+      <div className="home2">
         <h2> Overcome stuff </h2>
         <p>
           Innovative cleaning, organizing, and unburdening-- plus the tools you
           need to put you in motion. Sign up and get your motivation here.
         </p>
 
-        <button
-          class="col-sm-8 col-lg-6 bg-danger p-4"
-          className="buttonA center"
-        >
-          {" "}
-          Sign in{" "}
-        </button>
+        <button className="buttonA center"> Sign in </button>
+        <br />
       </div>
       <div className="home3">
         <h3>Features</h3>

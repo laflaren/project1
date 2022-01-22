@@ -10,25 +10,27 @@ export default function App() {
 
   const handleChangeView = isHome => {
     setIsHome(isHome);
+    console.log(isHome);
   };
   return (
-    <div class="col">
+    <div className="col">
       <h1> Döte </h1>
-      <div>
+      {/* create the ternary using state */}
+      {isHome ? (
         <button
-          class="col-sm-8 col-lg-6 bg-danger p-4"
-          className="buttonA center"
-          onClick={() => handleChangeView(true)}
+          className="headerButton"
+          onClick={() => handleChangeView(false)}
         >
-          Sign in
+          {" "}
+          Sign in{" "}
         </button>
-        {/* create the ternary using state */}
-        {isHome ? (
-          <Home addProject={newProject => handleAddProject()} />
-        ) : (
-          <List page={page} />
-        )}
-      </div>
+      ) : (
+        <button className="headerButton" onClick={() => handleChangeView(true)}>
+          {" "}
+          Home{" "}
+        </button>
+      )}
+      <div>{isHome ? <Home /> : <List page={page} />}</div>
       {/* filter sort 
       to do state / added, sort it by t
       completed - crossed out, 

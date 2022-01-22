@@ -1,3 +1,10 @@
+.App {
+  text-align: center;
+}
+body {
+  font-size: 20px;
+  background-color: white;
+}
 .center {
   text-align: center;
   max-height: 50%;
@@ -6,13 +13,6 @@
   display: block;
 }
 
-.App {
-  text-align: center;
-}
-body {
-  font-size: 20px;
-  background-color: white;
-}
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -46,13 +46,16 @@ body {
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   font-size: 16px;
   border-radius: 12px;
   text-align: center;
 }
-.buttonAdd {
+.headerButton {
+  display: flex;
+  justify-content: end;
+
   border: none;
   color: white;
   padding: 2px 5px;
@@ -73,4 +76,5 @@ body {
 .orange {
   background-color: #f84a07;
   max-height: 100%;
+  margin: 10px, 0, 10px, 0;
 }
