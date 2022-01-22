@@ -21,7 +21,7 @@ export default function Home() {
         <button className="buttonA center"> Sign in </button>
         <br />
       </div>
-      <div className="home3">
+      <div className="orange">
         <h3>Features</h3>
         <ul>
           <li> Local & in-person resources </li>
