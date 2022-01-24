@@ -1,5 +1,6 @@
 // import { response } from "express";
 import React, { useState, useEffect } from "react";
+import Quotes from "./Quotes.js";
 import "./App.css";
 
 export default function List() {
@@ -119,6 +120,8 @@ export default function List() {
       </ul>
 
       <div className="scroll"></div>
+
+      <Quotes />
     </div>
   );
 }

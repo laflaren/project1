@@ -12,7 +12,6 @@ body {
   margin-right: auto;
   display: block;
 }
-
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -77,4 +76,7 @@ body {
   background-color: #f84a07;
   max-height: 100%;
   margin: 10px, 0, 10px, 0;
+}
+
+.randomquotes {
 }
