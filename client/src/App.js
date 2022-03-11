@@ -11,17 +11,9 @@ export default function App() {
     <div className="col">
       <h1> Döte </h1>
 
-      {isHome ? (
-        <button className="headerButton" onClick={() => setIsHome(false)}>
-          {" "}
-          Sign in{" "}
-        </button>
-      ) : (
-        <button className="headerButton" onClick={() => setIsHome(true)}>
-          {" "}
-          Home{" "}
-        </button>
+      {isHome ? ( <button className="headerButton" onClick={() => setIsHome(false)}>  Sign in </button> ) : ( <button className="headerButton" onClick={() => setIsHome(true)}>  Home </button> 
       )}
+
       <div> {isHome ? <Home /> : <List />}</div>
     </div>
   );

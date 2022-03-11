@@ -110,7 +110,7 @@ export default function List() {
       </form>
       <h2 className="center">✅🎉 Done! You're free from: </h2>
 
-      <ul className="center" className="linethrough">
+      <ul className="linethrough">
         {completedTasks.map(task => (
           <li className="center">
             {task.text}
